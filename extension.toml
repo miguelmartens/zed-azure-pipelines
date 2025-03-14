@@ -1,0 +1,17 @@
+id = "azure-pipelines"
+name = "Azure Pipelines Language Server"
+version = "0.0.1"
+schema_version = 1
+
+authors = ["Miguel Martens <mail@miguelmartens.com>"]
+description = "Provides Azure Pipelines language support for Zed Editor by integrating the Azure Pipelines Language Server."
+repository = "https://github.com/miguelmartens/zed-azure-pipelines"
+
+[language_servers.azure-pipelines]
+name = "Azure Pipelines"
+languages = ["Azure Pipelines"]
+
+# [grammars.ansible]
+# repository = "https://github.com/miguelmartens/zed-tree-sitter-yaml"
+# commit = "bbe3aa859d16b95e9e9c0a2afd33da4e54f6b958"
+# path = "dialects/tree-sitter-azure-pipelines"

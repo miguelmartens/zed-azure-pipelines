@@ -1,0 +1,11 @@
+[package]
+name = "zed-azure-pipelines"
+version = "0.0.1"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+path = "src/azure-pipelines.rs"
+
+[dependencies]
+zed_extension_api = "0.3.0"
