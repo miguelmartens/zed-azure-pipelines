@@ -11,7 +11,6 @@ repository = "https://github.com/miguelmartens/zed-azure-pipelines"
 name = "Azure Pipelines"
 languages = ["Azure Pipelines"]
 
-# [grammars.ansible]
-# repository = "https://github.com/miguelmartens/zed-tree-sitter-yaml"
-# commit = "bbe3aa859d16b95e9e9c0a2afd33da4e54f6b958"
-# path = "dialects/tree-sitter-azure-pipelines"
+[grammars.yaml]
+repository = "https://github.com/tree-sitter-grammars/tree-sitter-yaml"
+commit = "b733d3f5f5005890f324333dd57e1f0badec5c87"
