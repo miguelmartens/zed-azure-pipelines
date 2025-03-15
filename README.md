@@ -80,33 +80,6 @@ The extension uses the Zed Extension API to:
 - **Launch the LSP:** Constructs the command to launch the language server via Node.js (using the system’s Node binary).
 - **Pass Settings:** Merges any workspace-specific LSP settings for a tailored experience.
 
-## Repository Structure
-
-A typical repository layout looks like this:
-
-```
-zed-azure-pipelines/
-├── Cargo.toml           # Rust project configuration (builds to WebAssembly)
-├── extension.toml       # Zed extension manifest
-└── src/
-    └── azure-pipelines.rs  # Extension implementation
-```
-
-## Publishing Your Extension
-
-To publish your extension:
-1. Fork the [zed-industries/extensions](https://github.com/zed-industries/extensions) repository.
-2. Add your extension as a Git submodule inside the `extensions/` directory:
-   ```sh
-   git submodule add https://github.com/your-username/zed-azure-pipelines.git extensions/zed-azure-pipelines
-   git add extensions/zed-azure-pipelines
-   ```
-3. Update the top-level `extensions.toml` with an entry for your extension.
-4. Run `pnpm sort-extensions` to ensure files are sorted correctly.
-5. Open a PR to merge your changes.
-
-For more detailed instructions, refer to [Zed’s documentation on developing extensions](https://zed.dev/docs/extensions/).
-
 ## License
 
 This project is licensed under the MIT License.
