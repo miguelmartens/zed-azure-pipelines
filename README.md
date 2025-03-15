@@ -3,13 +3,14 @@
 This extension brings Azure Pipelines language support to the [Zed Editor](https://zed.dev/). It integrates the [Azure Pipelines Language Server](https://www.npmjs.com/package/azure-pipelines-language-server) to provide rich language features like syntax highlighting, code completions, and diagnostics for Azure Pipelines YAML files.
 
 > **Note:** This extension is inspired by the [zed-ansible](https://github.com/kartikvashistha/zed-ansible/tree/main) extension as well as the official [Azure Pipelines VS Code extension](https://github.com/Microsoft/azure-pipelines-vscode).
+> **Important:** The extension currently only works when an Azure Pipelines file is detected as a YAML file, due to the absence of a dedicated Azure Pipelines grammar. It leverages the [tree-sitter-yaml](https://github.com/tree-sitter-grammars/tree-sitter-yaml) grammar until a specialized one is developed.
 
 ## Features
 
 - **Azure Pipelines Language Support:** Leverages the azure-pipelines-language-server to offer intellisense and error checking for Azure Pipelines files.
 - **Automatic Package Management:** Checks for the language server package and installs/updates it as needed.
 - **Workspace Configuration:** Customizes LSP settings per workspace.
-- **YAML-based Parsing:** Currently leverages the YAML grammar for syntax highlighting and Tree-sitter features.
+- **YAML-based Parsing:** Currently leverages the YAML grammar for syntax highlighting and Tree-sitter features [tree-sitter-yaml](https://github.com/tree-sitter/tree-sitter-yaml).
 
 ## Installation
 
