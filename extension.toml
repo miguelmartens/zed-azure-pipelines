@@ -12,5 +12,5 @@ name = "Azure Pipelines"
 languages = ["Azure Pipelines"]
 
 [grammars.yaml]
-repository = "https://github.com/tree-sitter-grammars/tree-sitter-yaml"
-commit = "b733d3f5f5005890f324333dd57e1f0badec5c87"
+repository = "https://github.com/miguelmartens/zed-tree-sitter-yaml"
+commit = "baff0b51c64ef6a1fb1f8390f3ad6015b83ec13a"
